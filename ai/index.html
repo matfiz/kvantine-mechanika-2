@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="lt" data-refpop="{&#34;open&#34;:&#34;Atverti konspekte →&#34;,&#34;goto&#34;:&#34;Eiti ten →&#34;,&#34;loading&#34;:&#34;Įkeliama…&#34;,&#34;failed&#34;:&#34;Šios nuorodos įkelti nepavyko.&#34;}"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mokytis su DI · Kvantinė mechanika II</title><meta name="description" content="Pasirinkite paskaitą ir skyrelį. Parenkite užklausą, tada patys tikrinkite atsakymo prielaidas ir skaičiavimus."><link rel="icon" href="/kvm2/favicon.svg"><link rel="alternate" hreflang="lt" href="/kvm2/ai"><link rel="alternate" hreflang="en" href="/kvm2/en/ai"><script>
+      // Applied before first paint, so the page never flashes the wrong theme.
+      (function () {
+        try {
+          var t = localStorage.getItem("quantum2-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/kvm2/_astro/about.9xKl_-85.css"></head> <body> <script type="module" src="/kvm2/_astro/UserNav.astro_astro_type_script_index_0_lang.CHtXHBZD.js"></script>  <div class="board" aria-hidden="true"><div class="board-ink"></div></div> <script>
+      // Fade the board out over the first 60% of a screen of scrolling.
+      (function () {
+        var board = document.querySelector(".board"), frame = 0;
+        if (!board) return;
+        function update() {
+          frame = 0;
+          board.style.opacity = String(Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.6)));
+        }
+        window.addEventListener("scroll", function () {
+          if (!frame) frame = requestAnimationFrame(update);
+        }, { passive: true });
+        update();
+      })();
+    </script> <a class="skip-link" href="#main">Pereiti prie turinio</a> <header class="site-header"> <div class="wrap bar">  <a class="brand" href="/kvm2/">Kvantinė mechanika II</a> <nav class="site-nav">  <div class="nav-links"> <a href="/kvm2/"> Paskaitos </a><a href="/kvm2/problems"> Uždaviniai </a><a href="/kvm2/review"> Kartojimas </a><a href="/kvm2/ai" aria-current="page"> Mokytis su DI </a><a href="/kvm2/literature"> Literatūra </a><a href="/kvm2/about"> Apie kursą </a><a href="/kvm2/search"> Paieška </a> </div>  <a class="matfiz-user-nav" href="/kvm2/user" data-matfiz-nav data-label="Mano pažanga" aria-label="Mano pažanga" title="Mano pažanga" data-matfiz-course="{&#34;version&#34;:1,&#34;id&#34;:&#34;quantum2&#34;,&#34;prefix&#34;:&#34;quantum2-&#34;,&#34;titles&#34;:{&#34;lt&#34;:&#34;Kvantinė mechanika II&#34;,&#34;en&#34;:&#34;Quantum Mechanics II&#34;},&#34;homes&#34;:{&#34;lt&#34;:&#34;/kvm2/&#34;,&#34;en&#34;:&#34;/kvm2/en/&#34;},&#34;details&#34;:{&#34;lt&#34;:&#34;/kvm2/&#34;,&#34;en&#34;:&#34;/kvm2/en/&#34;}}" hidden data-astro-cid-udyq3rbu> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-udyq3rbu> <path d="M3 3v18h18" data-astro-cid-udyq3rbu></path><path d="m7 15 4-4 3 3 5-6" data-astro-cid-udyq3rbu></path> </svg> </a>   <div class="lang-switch" role="group" aria-label="Kalba"> <a href="/kvm2/ai" hreflang="lt" lang="lt" aria-current="true"> LT <span class="lang-full">Lietuvių</span> </a><a href="/kvm2/en/ai" hreflang="en" lang="en"> EN <span class="lang-full">English</span> </a> </div> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Perjungti šviesią ir tamsią temą"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </nav> </div> </header> <main class="wrap" id="main" data-pagefind-body="true">  <header class="page-head"> <h1>Mokytis su DI</h1> <p class="lede">Pasirinkite paskaitą ir skyrelį. Parenkite užklausą, tada patys tikrinkite atsakymo prielaidas ir skaičiavimus.</p> </header> <section class="ask" id="ask" aria-labelledby="ask-heading" data-ask="{&#34;lectures&#34;:[{&#34;id&#34;:0,&#34;title&#34;:&#34;Matematinės prielaidos&#34;,&#34;sections&#34;:[&#34;Operatoriai, negalintys veikti kiekvieno vektoriaus&#34;,&#34;Operatoriai ir jų sritys&#34;,&#34;Įrodymų statusas šiame kurse&#34;,&#34;Daugybos operatoriai&#34;]},{&#34;id&#34;:1,&#34;title&#34;:&#34;Dalelė dėžėje&#34;,&#34;sections&#34;:[&#34;Nuo grandinės prie dėžės&#34;,&#34;Banginės funkcijos dėžėje&#34;,&#34;Stovinčiosios bangos&#34;,&#34;Kodėl energijai reikia srities&#34;,&#34;Dėžės hamiltonianas&#34;,&#34;Parabolės būsenos energijos matavimai&#34;,&#34;Būsena už srities ribų&#34;]},{&#34;id&#34;:2,&#34;title&#34;:&#34;Dalelės dėžėje evoliucija&#34;,&#34;sections&#34;:[&#34;Kiekvienos būsenos evoliucija&#34;,&#34;Dviejų lygmenų mušimai&#34;,&#34;Būsenos atsikūrimai&#34;,&#34;Koordinatės matavimas intervale&#34;,&#34;Vidurkių kitimas laike&#34;,&#34;Kokią būseną palieka matavimas&#34;]},{&#34;id&#34;:3,&#34;title&#34;:&#34;Kuris judesio kiekis? Savijungumas priklauso nuo srities&#34;,&#34;sections&#34;:[&#34;Nuo žiedo prie apskritimo&#34;,&#34;Klasė mathcalA ir kraštinė forma&#34;,&#34;Judesio kiekio su sienelėmis jungtinis operatorius&#34;,&#34;Judesio kiekio operatoriai P_θ&#34;,&#34;Judesio kiekis ir dėžės energija&#34;]},{&#34;id&#34;:4,&#34;title&#34;:&#34;Laisvoji dalelė: stebiniai be tikrinių verčių&#34;,&#34;sections&#34;:[&#34;Nuo apskritimo prie tiesės&#34;,&#34;Koordinatė ir judesio kiekis&#34;,&#34;Laisvosios dalelės energija ir kanoninis sąryšis&#34;,&#34;Neapibrėžtumo sąryšis&#34;,&#34;Gauso paketo judesio kiekiai&#34;]},{&#34;id&#34;:5,&#34;title&#34;:&#34;Intervalų matavimai: spektriniai matai&#34;,&#34;sections&#34;:[&#34;Spektriniai matai&#34;,&#34;Spektrinė teorema&#34;,&#34;Intervalo matavimas&#34;,&#34;Formulė nebūtinai nustato matavimo rezultatus&#34;,&#34;Koordinatė ir judesio kiekis negali būti abu aprėžti&#34;]},{&#34;id&#34;:6,&#34;title&#34;:&#34;Spektras ir rezolventė&#34;,&#34;sections&#34;:[&#34;Rezolventė ir spektras&#34;,&#34;Šio kurso operatorių spektrai&#34;,&#34;Spektro rūšys&#34;,&#34;Laisvosios dalelės rezolventė&#34;,&#34;Begalinė grandinė&#34;]},{&#34;id&#34;:7,&#34;title&#34;:&#34;Dinamika: Stouno teorema ir laisvasis bangų paketas&#34;,&#34;sections&#34;:[&#34;Unitariųjų operatorių grupės ir jų generatoriai&#34;,&#34;Evoliucija išreikštiniam hamiltonianui&#34;,&#34;Stouno teorema&#34;,&#34;Laisvasis paketas&#34;]},{&#34;id&#34;:8,&#34;title&#34;:&#34;Harmoninis osciliatorius ir koherentinės būsenos&#34;,&#34;sections&#34;:[&#34;Kopėčių operatoriai&#34;,&#34;Ermito funkcijų pilnumas&#34;,&#34;Osciliatoriaus lygmenys&#34;,&#34;Ketvirčio periodo evoliucija yra Furjė transformacija&#34;,&#34;Koherentinės būsenos&#34;,&#34;Fazinė erdvė būsenų erdvėje&#34;]},{&#34;id&#34;:9,&#34;title&#34;:&#34;Kanoninė pora: Veilio sąryšis ir Stouno ir fon Noimano teorema&#34;,&#34;sections&#34;:[&#34;Postūmiai ir Veilio sąryšis&#34;,&#34;Teorema ir kodėl sąryšio [Q,P]=iiħnepakanka&#34;,&#34;Fon Noimano projektorius&#34;,&#34;Stouno ir fon Noimano teoremos įrodymas&#34;,&#34;Ką nustato teorema&#34;]},{&#34;id&#34;:10,&#34;title&#34;:&#34;Baigtinė duobė: dvi spektro dalys&#34;,&#34;sections&#34;:[&#34;Aprėžto potencialo pridėjimas&#34;,&#34;Tikrinės vertės lygtis&#34;,&#34;Surištųjų būsenų lygmenys paprastieji&#34;,&#34;Stačiakampė duobė&#34;,&#34;Kontinuumas&#34;,&#34;Kiekviena traukiančioji duobė turi surištąją būseną&#34;]},{&#34;id&#34;:11,&#34;title&#34;:&#34;Sklaidos būsenos: praėjimas, atspindys ir tuneliavimas&#34;,&#34;sections&#34;:[&#34;Neslopstančios bangos&#34;,&#34;deltapotencialas&#34;,&#34;Laiptelis&#34;,&#34;Paketai ir banginiai operatoriai&#34;,&#34;Tuneliavimas&#34;]},{&#34;id&#34;:12,&#34;title&#34;:&#34;Liekančios ir nutolstančios būsenos: skilimas&#34;,&#34;sections&#34;:[&#34;Taškinė ir tolydžioji dalys&#34;,&#34;Nutolstančios būsenos&#34;,&#34;Trumpasis laikas&#34;,&#34;Tiksliai eksponentiškai skylanti būsena&#34;,&#34;Lygmuo tolydžiajame spektre: auksinė taisyklė&#34;]},{&#34;id&#34;:13,&#34;title&#34;:&#34;Dalelė erdvėje: orbitinis judesio kiekio momentas&#34;,&#34;sections&#34;:[&#34;Trys dimensijos&#34;,&#34;Orbitinis judesio kiekio momentas&#34;,&#34;Multipletai funkcijų erdvėje&#34;,&#34;Sferinės harmonikos&#34;,&#34;Centriniai potencialai&#34;,&#34;Osciliatorius erdvėje&#34;]},{&#34;id&#34;:14,&#34;title&#34;:&#34;Vandenilis: hamiltonianas&#34;,&#34;sections&#34;:[&#34;Kulono hamiltonianas&#34;,&#34;Vandenilis stabilus&#34;,&#34;Tolydžioji dalis ir diskretusis spektras&#34;]},{&#34;id&#34;:15,&#34;title&#34;:&#34;Vandenilis: spektras&#34;,&#34;sections&#34;:[&#34;Surištosios būsenos&#34;,&#34;Išsigimimas n²&#34;,&#34;Balmerio linijos&#34;,&#34;Kas yra tolydžioji kvantinė sistema&#34;]}],&#34;context&#34;:&#34;Studijuoju kursą „Kvantinė mechanika II“ apie tolydžiąsias sistemas. Baigtinių sistemų kvantinę mechaniką jau mokiausi. Nagrinėju {n}-ąją paskaitą „{title}“, skyrelį „{topic}“. Skaliarinė sandauga yra antitiesinė pagal pirmąjį argumentą, ħ rašome išreikštai. Nurodyk kiekvieno operatoriaus sritį ir kraštines sąlygas. Skirk būseną nuo operatoriaus srities vektoriaus, o simetrinį operatorių – nuo savijungio. Skirk įrodytus rezultatus, įrodymų eskizus ir cituojamus rezultatus. Remkis mano pateikta paskaitos ištrauka; jei jos reikia, paprašyk.&#34;,&#34;modes&#34;:[{&#34;id&#34;:&#34;explain&#34;,&#34;label&#34;:&#34;Paaiškink pavyzdžiu&#34;,&#34;description&#34;:&#34;Trumpai paaiškink idėją, apibrėžk simbolius ir išspręsk vieną nedidelį šio skyrelio pavyzdį. Nurodyk prielaidas ir sritį. Duok panašų uždavinį ir lauk mano sprendimo. Paprašyk patikrinti normavimą, matavimo vienetus ir ribinius atvejus.&#34;,&#34;detailLabel&#34;:&#34;Įrašykite klausimą arba savo sprendimą (nebūtina).&#34;,&#34;detailPlaceholder&#34;:&#34;Klausimas: …\nMano sprendimas: …&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;{detail}&#34;,&#34;template&#34;:&#34;{context}\n\n{detail}\n\nTrumpai paaiškink idėją, apibrėžk simbolius ir išspręsk vieną nedidelį šio skyrelio pavyzdį. Nurodyk prielaidas ir sritį. Duok panašų uždavinį ir lauk mano sprendimo. Paprašyk patikrinti normavimą, matavimo vienetus ir ribinius atvejus.&#34;},{&#34;id&#34;:&#34;quiz&#34;,&#34;label&#34;:&#34;Paklausinėk mane&#34;,&#34;description&#34;:&#34;Užduok po vieną klausimą ir lauk atsakymo. Pradėk tiksliu apibrėžimu, tada paprašyk pavyzdžio, kontrpavyzdžio ir teoremai būtinos prielaidos. Jei stringu, duok patikrinimą arba užuominą.&#34;,&#34;detailLabel&#34;:&#34;Įrašykite klausimą arba savo sprendimą (nebūtina).&#34;,&#34;detailPlaceholder&#34;:&#34;Klausimas: …\nMano sprendimas: …&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;{detail}&#34;,&#34;template&#34;:&#34;{context}\n\n{detail}\n\nUžduok po vieną klausimą ir lauk atsakymo. Pradėk tiksliu apibrėžimu, tada paprašyk pavyzdžio, kontrpavyzdžio ir teoremai būtinos prielaidos. Jei stringu, duok patikrinimą arba užuominą.&#34;},{&#34;id&#34;:&#34;check&#34;,&#34;label&#34;:&#34;Patikrink mano sprendimą&#34;,&#34;description&#34;:&#34;Paklausk, kas duota ir ką reikia parodyti. Skaityk mano sprendimą po žingsnį ir prašyk kiekvieną pagrįsti. Padėk pačiam rasti klaidą. Tikrink, ar vektorius priklauso sričiai, kraštinius narius, konvergavimą, ženklus ir ħ daugiklius. Neišgalvok ištraukų ar nuorodų.&#34;,&#34;detailLabel&#34;:&#34;Įrašykite klausimą arba savo sprendimą (nebūtina).&#34;,&#34;detailPlaceholder&#34;:&#34;Klausimas: …\nMano sprendimas: …&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;{detail}&#34;,&#34;template&#34;:&#34;{context}\n\n{detail}\n\nPaklausk, kas duota ir ką reikia parodyti. Skaityk mano sprendimą po žingsnį ir prašyk kiekvieną pagrįsti. Padėk pačiam rasti klaidą. Tikrink, ar vektorius priklauso sričiai, kraštinius narius, konvergavimą, ženklus ir ħ daugiklius. Neišgalvok ištraukų ar nuorodų.&#34;}]}" data-text="{&#34;copied&#34;:&#34;Nukopijuota ✓&#34;,&#34;selected&#34;:&#34;Užklausa pažymėta. Paspauskite Ctrl+C.&#34;}"> <h2 id="ask-heading">Klausti apie paskaitą</h2> <div class="ask-card"> <label class="ask-step"> <span>Paskaita</span> <select class="select-field" data-lecture> <option value="0"> 0 · Matematinės prielaidos </option><option value="1"> 1 · Dalelė dėžėje </option><option value="2"> 2 · Dalelės dėžėje evoliucija </option><option value="3"> 3 · Kuris judesio kiekis? Savijungumas priklauso nuo srities </option><option value="4"> 4 · Laisvoji dalelė: stebiniai be tikrinių verčių </option><option value="5"> 5 · Intervalų matavimai: spektriniai matai </option><option value="6"> 6 · Spektras ir rezolventė </option><option value="7"> 7 · Dinamika: Stouno teorema ir laisvasis bangų paketas </option><option value="8"> 8 · Harmoninis osciliatorius ir koherentinės būsenos </option><option value="9"> 9 · Kanoninė pora: Veilio sąryšis ir Stouno ir fon Noimano teorema </option><option value="10"> 10 · Baigtinė duobė: dvi spektro dalys </option><option value="11"> 11 · Sklaidos būsenos: praėjimas, atspindys ir tuneliavimas </option><option value="12"> 12 · Liekančios ir nutolstančios būsenos: skilimas </option><option value="13"> 13 · Dalelė erdvėje: orbitinis judesio kiekio momentas </option><option value="14"> 14 · Vandenilis: hamiltonianas </option><option value="15" selected> 15 · Vandenilis: spektras </option> </select> </label> <fieldset class="ask-step"> <legend>Skyrelis</legend> <div class="chip-row" data-topics> <label class="topic-chip"><input type="radio" name="ask-topic" value="Surištosios būsenos" checked><span>Surištosios būsenos</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Išsigimimas n²"><span>Išsigimimas n²</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Balmerio linijos"><span>Balmerio linijos</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Kas yra tolydžioji kvantinė sistema"><span>Kas yra tolydžioji kvantinė sistema</span></label> </div> </fieldset> <fieldset class="ask-step"> <legend>Ko reikia?</legend> <div class="mode-grid"> <label class="mode"> <input type="radio" name="ask-mode" value="explain" checked> <span class="mode-label">Paaiškink pavyzdžiu</span> <span class="mode-description">Trumpai paaiškink idėją, apibrėžk simbolius ir išspręsk vieną nedidelį šio skyrelio pavyzdį. Nurodyk prielaidas ir sritį. Duok panašų uždavinį ir lauk mano sprendimo. Paprašyk patikrinti normavimą, matavimo vienetus ir ribinius atvejus.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="quiz"> <span class="mode-label">Paklausinėk mane</span> <span class="mode-description">Užduok po vieną klausimą ir lauk atsakymo. Pradėk tiksliu apibrėžimu, tada paprašyk pavyzdžio, kontrpavyzdžio ir teoremai būtinos prielaidos. Jei stringu, duok patikrinimą arba užuominą.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="check"> <span class="mode-label">Patikrink mano sprendimą</span> <span class="mode-description">Paklausk, kas duota ir ką reikia parodyti. Skaityk mano sprendimą po žingsnį ir prašyk kiekvieną pagrįsti. Padėk pačiam rasti klaidą. Tikrink, ar vektorius priklauso sričiai, kraštinius narius, konvergavimą, ženklus ir ħ daugiklius. Neišgalvok ištraukų ar nuorodų.</span> </label> </div> </fieldset> <label class="ask-step"> <span data-detail-label>Įrašykite klausimą arba savo sprendimą (nebūtina).</span> <textarea class="number-field ask-detail" rows="2" data-detail placeholder="Klausimas: …
+Mano sprendimas: …"></textarea> </label> <label class="ask-step"> <span>Jūsų užklausa – galite redaguoti</span> <textarea class="ask-preview" rows="12" data-preview spellcheck="false"></textarea> </label> <div class="ask-actions"> <a class="btn btn-primary" href="https://www.google.com/search?udm=50" target="_blank" rel="noopener" data-ai-mode>Klausti Google DI ↗</a> <button class="btn" type="button" data-copy-preview>Kopijuoti užklausą</button> </div> <p class="ask-status" data-status role="status" aria-live="polite">Nukopijuotą užklausą galite naudoti pasirinktame asistente.</p> </div> </section><h2>Nuo ko pradėti</h2> <p class="section-intro">Paprašykite patikrinti prielaidą prieš pradedant skaičiuoti.</p> <div class="chat"> <div class="chat-turn chat-you"> <div class="chat-bubble"> <span class="chat-who">Jūs</span> <p>Noriu taikyti šį operatorių būsenai.</p> </div>  </div><div class="chat-turn chat-ai"> <div class="chat-bubble"> <span class="chat-who">DI</span> <p>Kokia yra operatoriaus sritis? Ar jūsų vektorius jai priklauso?</p> </div>  </div> </div> <h2>Mokymosi įpročiai</h2> <ul class="habits"> <li><b>Pateikite šaltinį.</b> Įklijuokite tikslų teiginį ir savo sprendimą.</li><li><b>Spręskite patys.</b> Paprašykite vienos užuominos ir bandykite toliau.</li> </ul> <h2>Ilgesni pokalbiai</h2> <p class="section-intro">Įklijuokite ištrauką ir užpildykite laukus laužtiniuose skliaustuose.</p> <details class="prompt-card" data-prompt> <summary> <span class="prompt-title">1 · Pakartoti sąvoką</span> <span class="prompt-when">Įklijuokite paskaitos ištrauką ir savo klausimą.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Studijuoju kursą „Kvantinė mechanika II“ apie tolydžiąsias sistemas. Baigtinių sistemų kvantinę mechaniką jau mokiausi. Nagrinėju [N]-ąją paskaitą „[paskaitos pavadinimas]“, skyrelį „[skyrelis]“. Skaliarinė sandauga yra antitiesinė pagal pirmąjį argumentą, ħ rašome išreikštai. Nurodyk kiekvieno operatoriaus sritį ir kraštines sąlygas. Skirk būseną nuo operatoriaus srities vektoriaus, o simetrinį operatorių – nuo savijungio. Skirk įrodytus rezultatus, įrodymų eskizus ir cituojamus rezultatus. Remkis mano pateikta paskaitos ištrauka; jei jos reikia, paprašyk.
+
+Paprašyk manęs pateikti apibrėžimą, pavyzdį ir kontrpavyzdį. Klausinėk po vieną klausimą ir lauk.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Kopijuoti užklausą</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">2 · Patikrinti įrodymą</span> <span class="prompt-when">Įklijuokite paskaitos ištrauką ir savo klausimą.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Studijuoju kursą „Kvantinė mechanika II“ apie tolydžiąsias sistemas. Baigtinių sistemų kvantinę mechaniką jau mokiausi. Nagrinėju [N]-ąją paskaitą „[paskaitos pavadinimas]“, skyrelį „[skyrelis]“. Skaliarinė sandauga yra antitiesinė pagal pirmąjį argumentą, ħ rašome išreikštai. Nurodyk kiekvieno operatoriaus sritį ir kraštines sąlygas. Skirk būseną nuo operatoriaus srities vektoriaus, o simetrinį operatorių – nuo savijungio. Skirk įrodytus rezultatus, įrodymų eskizus ir cituojamus rezultatus. Remkis mano pateikta paskaitos ištrauka; jei jos reikia, paprašyk.
+
+Paprašyk teiginio ir viso mano įrodymo. Tikrink kiekvieno žingsnio prielaidas, sritis ir konvergavimą. Pirmiausia duok užuominą, kad klaidą rasčiau pats.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Kopijuoti užklausą</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">3 · Sudaryti uždavinį</span> <span class="prompt-when">Įklijuokite paskaitos ištrauką ir savo klausimą.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Studijuoju kursą „Kvantinė mechanika II“ apie tolydžiąsias sistemas. Baigtinių sistemų kvantinę mechaniką jau mokiausi. Nagrinėju [N]-ąją paskaitą „[paskaitos pavadinimas]“, skyrelį „[skyrelis]“. Skaliarinė sandauga yra antitiesinė pagal pirmąjį argumentą, ħ rašome išreikštai. Nurodyk kiekvieno operatoriaus sritį ir kraštines sąlygas. Skirk būseną nuo operatoriaus srities vektoriaus, o simetrinį operatorių – nuo savijungio. Skirk įrodytus rezultatus, įrodymų eskizus ir cituojamus rezultatus. Remkis mano pateikta paskaitos ištrauka; jei jos reikia, paprašyk.
+
+Padėk man sudaryti vieną šios paskaitos uždavinį. Patikrink, ar duomenų pakanka. Paprašyk manęs pačiam išspręsti uždavinį ir patikrinti atsakymą prieš perduodant jį kitam studentui.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Kopijuoti užklausą</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">4 · Spręsti uždavinį</span> <span class="prompt-when">Įklijuokite paskaitos ištrauką ir savo klausimą.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Studijuoju kursą „Kvantinė mechanika II“ apie tolydžiąsias sistemas. Baigtinių sistemų kvantinę mechaniką jau mokiausi. Nagrinėju [N]-ąją paskaitą „[paskaitos pavadinimas]“, skyrelį „[skyrelis]“. Skaliarinė sandauga yra antitiesinė pagal pirmąjį argumentą, ħ rašome išreikštai. Nurodyk kiekvieno operatoriaus sritį ir kraštines sąlygas. Skirk būseną nuo operatoriaus srities vektoriaus, o simetrinį operatorių – nuo savijungio. Skirk įrodytus rezultatus, įrodymų eskizus ir cituojamus rezultatus. Remkis mano pateikta paskaitos ištrauka; jei jos reikia, paprašyk.
+
+Paprašyk uždavinio sąlygos ir mano bandymo. Klausk, kodėl pasirinktas metodas tinka. Duok po vieną užuominą ir lauk mano sprendimo.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Kopijuoti užklausą</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><h2>Darbas poromis</h2> <ol class="steps"> <li>Kiekvienas sudarykite uždavinį ir patikrinkite savo sprendimą.</li><li>Apsikeiskite tik sąlygomis.</li><li>Išspręskite vienas kito uždavinį.</li><li>Be DI palyginkite sprendimus ir aptarkite klaidas.</li> </ol> <div class="trap"> <h3>Ką patikrinti</h3> <p><strong>Tikrinkite prielaidas.</strong> Patikrinkite sritį, kraštines sąlygas ir konvergavimą pagal konspektą.</p><p><strong>Patikrinkite atsakymą.</strong> Patikrinkite normavimą, matavimo vienetus ir ribinius atvejus.</p> </div> <script>
+    (function () {
+      /** Copy synchronously inside the click; the async API is the fallback. */
+      function copy(text) {
+        var area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed"; area.style.opacity = "0"; area.style.top = "0";
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+        document.body.removeChild(area);
+        if (!ok && navigator.clipboard) {
+          navigator.clipboard.writeText(text).catch(function () {});
+          ok = true;
+        }
+        return ok;
+      }
+      function say(status, message) {
+        if (!status) return;
+        status.textContent = message;
+        status.classList.add("is-live");
+      }
+
+      // ---- Ask about a lecture -------------------------------------------
+      var ask = document.querySelector("[data-ask]");
+      if (ask) {
+        var data = JSON.parse(ask.dataset.ask);
+        var text = JSON.parse(ask.dataset.text);
+        var lectureSelect = ask.querySelector("[data-lecture]");
+        var topics = ask.querySelector("[data-topics]");
+        var detail = ask.querySelector("[data-detail]");
+        var detailLabel = ask.querySelector("[data-detail-label]");
+        var preview = ask.querySelector("[data-preview]");
+        var status = ask.querySelector("[data-status]");
+
+        var fill = function (template, values) {
+          return template.replace(/\{(\w+)\}/g, function (whole, key) {
+            return key in values ? values[key] : whole;
+          });
+        };
+        var lecture = function () {
+          return data.lectures.find(function (l) { return String(l.id) === lectureSelect.value; });
+        };
+        var mode = function () {
+          var picked = ask.querySelector("input[name=ask-mode]:checked");
+          return data.modes.find(function (m) { return m.id === (picked && picked.value); }) || data.modes[0];
+        };
+        var topic = function () {
+          var picked = ask.querySelector("input[name=ask-topic]:checked");
+          return picked ? picked.value : "";
+        };
+
+        var renderTopics = function () {
+          topics.textContent = "";
+          lecture().sections.forEach(function (title, index) {
+            var label = document.createElement("label");
+            label.className = "topic-chip";
+            var input = document.createElement("input");
+            input.type = "radio"; input.name = "ask-topic"; input.value = title; input.checked = index === 0;
+            var span = document.createElement("span");
+            span.textContent = title;
+            label.appendChild(input); label.appendChild(span);
+            topics.appendChild(label);
+          });
+        };
+        var render = function () {
+          var l = lecture(), m = mode(), typed = detail.value.trim();
+          detailLabel.textContent = m.detailLabel;
+          detail.placeholder = m.detailPlaceholder;
+          var context = fill(data.context, { n: l.id, title: l.title, topic: topic() });
+          var detailText = typed ? fill(m.detailFilled, { detail: typed }) : m.detailEmpty;
+          preview.value = fill(m.template, { context: context, detail: detailText })
+            .replace(/\n{3,}/g, "\n\n");
+          syncAiMode();
+        };
+        var aiMode = ask.querySelector("[data-ai-mode]");
+        var syncAiMode = function () {
+          aiMode.href = "https://www.google.com/search?udm=50&q=" + encodeURIComponent(preview.value);
+        };
+        // The preview is editable, and an edited prompt is the one to send.
+        preview.addEventListener("input", syncAiMode);
+
+        // A lecture page links here as ai/?lecture=N, so arrive on that lecture.
+        var wanted = new URLSearchParams(location.search).get("lecture");
+        if (wanted && data.lectures.some(function (l) { return String(l.id) === wanted; })) {
+          lectureSelect.value = wanted;
+          renderTopics();
+        }
+        lectureSelect.addEventListener("change", function () { renderTopics(); render(); });
+        // The preview is excluded: its change event fires on blur, and
+        // re-rendering then would throw away what the student just edited.
+        ask.addEventListener("change", function (event) {
+          if (event.target !== lectureSelect && event.target !== preview && event.target !== detail) render();
+        });
+        detail.addEventListener("input", render);
+        render();
+
+        ask.querySelector("[data-copy-preview]").addEventListener("click", function () {
+          if (copy(preview.value)) { say(status, text.copied); }
+          else { preview.select(); say(status, text.selected); }
+        });
+      }
+
+      // ---- The long prompts ----------------------------------------------
+      var strings = ask ? JSON.parse(ask.dataset.text) : { copied: "✓", selected: "Ctrl+C" };
+      document.querySelectorAll("[data-prompt]").forEach(function (card) {
+        var source = card.querySelector("[data-prompt-text]");
+        var body = source.textContent || "";
+        var status = card.querySelector("[data-status]");
+        var selectSource = function () {
+          var range = document.createRange();
+          range.selectNodeContents(source);
+          var selection = window.getSelection();
+          if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+        };
+        card.querySelector("[data-copy]").addEventListener("click", function () {
+          if (copy(body)) { say(status, strings.copied); }
+          else { selectSource(); say(status, strings.selected); }
+        });
+      });
+    })();
+  </script>  </main> <footer class="site-footer"> <div class="wrap"> <p> Kvantinė mechanika II — Tolydžios sistemos.
+  Prie paskaitų savikontrolės klausimų pateikti atsakymai. </p> </div> </footer> <script>
+      document.querySelector("[data-theme-toggle]")?.addEventListener("click", function () {
+        var root = document.documentElement;
+        var current = root.getAttribute("data-theme");
+        if (!current) {
+          current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        var next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("quantum2-theme", next); } catch (e) {}
+      });
+    </script>  <script type="module" src="/kvm2/_astro/Base.astro_astro_type_script_index_0_lang.CaQP8g50.js"></script> </body> </html>

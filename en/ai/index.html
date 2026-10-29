@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en" data-refpop="{&#34;open&#34;:&#34;Open in the notes →&#34;,&#34;goto&#34;:&#34;Go there →&#34;,&#34;loading&#34;:&#34;Loading…&#34;,&#34;failed&#34;:&#34;Could not load this reference.&#34;}"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Study with AI · Quantum Mechanics II</title><meta name="description" content="Choose a lecture and section. Prepare a prompt, then check the answer’s assumptions and calculations yourself."><link rel="icon" href="/kvm2/favicon.svg"><link rel="alternate" hreflang="lt" href="/kvm2/ai"><link rel="alternate" hreflang="en" href="/kvm2/en/ai"><script>
+      // Applied before first paint, so the page never flashes the wrong theme.
+      (function () {
+        try {
+          var t = localStorage.getItem("quantum2-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/kvm2/_astro/about.9xKl_-85.css"></head> <body> <script type="module" src="/kvm2/_astro/UserNav.astro_astro_type_script_index_0_lang.CHtXHBZD.js"></script>  <div class="board" aria-hidden="true"><div class="board-ink"></div></div> <script>
+      // Fade the board out over the first 60% of a screen of scrolling.
+      (function () {
+        var board = document.querySelector(".board"), frame = 0;
+        if (!board) return;
+        function update() {
+          frame = 0;
+          board.style.opacity = String(Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.6)));
+        }
+        window.addEventListener("scroll", function () {
+          if (!frame) frame = requestAnimationFrame(update);
+        }, { passive: true });
+        update();
+      })();
+    </script> <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="wrap bar">  <a class="brand" href="/kvm2/en/">Quantum Mechanics II</a> <nav class="site-nav">  <div class="nav-links"> <a href="/kvm2/en/"> Lectures </a><a href="/kvm2/en/problems"> Problems </a><a href="/kvm2/en/review"> Review </a><a href="/kvm2/en/ai" aria-current="page"> Study with AI </a><a href="/kvm2/en/literature"> Bibliography </a><a href="/kvm2/en/about"> About </a><a href="/kvm2/en/search"> Search </a> </div>  <a class="matfiz-user-nav" href="/kvm2/en/user" data-matfiz-nav data-label="My progress" aria-label="My progress" title="My progress" data-matfiz-course="{&#34;version&#34;:1,&#34;id&#34;:&#34;quantum2&#34;,&#34;prefix&#34;:&#34;quantum2-&#34;,&#34;titles&#34;:{&#34;lt&#34;:&#34;Kvantinė mechanika II&#34;,&#34;en&#34;:&#34;Quantum Mechanics II&#34;},&#34;homes&#34;:{&#34;lt&#34;:&#34;/kvm2/&#34;,&#34;en&#34;:&#34;/kvm2/en/&#34;},&#34;details&#34;:{&#34;lt&#34;:&#34;/kvm2/&#34;,&#34;en&#34;:&#34;/kvm2/en/&#34;}}" hidden data-astro-cid-udyq3rbu> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-udyq3rbu> <path d="M3 3v18h18" data-astro-cid-udyq3rbu></path><path d="m7 15 4-4 3 3 5-6" data-astro-cid-udyq3rbu></path> </svg> </a>   <div class="lang-switch" role="group" aria-label="Language"> <a href="/kvm2/ai" hreflang="lt" lang="lt"> LT <span class="lang-full">Lietuvių</span> </a><a href="/kvm2/en/ai" hreflang="en" lang="en" aria-current="true"> EN <span class="lang-full">English</span> </a> </div> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </nav> </div> </header> <main class="wrap" id="main" data-pagefind-body="true">  <header class="page-head"> <h1>Study with AI</h1> <p class="lede">Choose a lecture and section. Prepare a prompt, then check the answer’s assumptions and calculations yourself.</p> </header> <section class="ask" id="ask" aria-labelledby="ask-heading" data-ask="{&#34;lectures&#34;:[{&#34;id&#34;:0,&#34;title&#34;:&#34;Mathematical preliminaries&#34;,&#34;sections&#34;:[&#34;Operators that cannot act on every vector&#34;,&#34;Operators with domains&#34;,&#34;How this course proves&#34;,&#34;Multiplication operators&#34;]},{&#34;id&#34;:1,&#34;title&#34;:&#34;The particle in a box&#34;,&#34;sections&#34;:[&#34;From a chain to the box&#34;,&#34;Wavefunctions in a box&#34;,&#34;Stationary waves&#34;,&#34;Why the energy needs a domain&#34;,&#34;The box Hamiltonian&#34;,&#34;Energy readings in a parabola&#34;,&#34;A state outside the domain&#34;]},{&#34;id&#34;:2,&#34;title&#34;:&#34;The box in time&#34;,&#34;sections&#34;:[&#34;Every state evolves&#34;,&#34;Two levels beat&#34;,&#34;Revivals&#34;,&#34;Reading position on an interval&#34;,&#34;Means in time&#34;,&#34;What a reading leaves&#34;]},{&#34;id&#34;:3,&#34;title&#34;:&#34;Which momentum? Self-adjointness is a choice&#34;,&#34;sections&#34;:[&#34;From the ring to the circle&#34;,&#34;The class mathcalA and the boundary form&#34;,&#34;The adjoint of the momentum with walls&#34;,&#34;The momenta P_θ&#34;,&#34;The momentum and the box’s energy&#34;]},{&#34;id&#34;:4,&#34;title&#34;:&#34;The free particle: observables without eigenvalues&#34;,&#34;sections&#34;:[&#34;From the circle to the line&#34;,&#34;Position and momentum&#34;,&#34;The free energy and the canonical relation&#34;,&#34;The uncertainty relation&#34;,&#34;A Gaussian’s momenta&#34;]},{&#34;id&#34;:5,&#34;title&#34;:&#34;Readings on intervals: spectral measures&#34;,&#34;sections&#34;:[&#34;Spectral measures&#34;,&#34;The spectral theorem&#34;,&#34;Reading an interval&#34;,&#34;A formula need not decide the readings&#34;,&#34;Position and momentum cannot both be bounded&#34;]},{&#34;id&#34;:6,&#34;title&#34;:&#34;The spectrum and the resolvent&#34;,&#34;sections&#34;:[&#34;Resolvent and spectrum&#34;,&#34;Spectra of the operators of this course&#34;,&#34;Kinds of spectrum&#34;,&#34;The free resolvent&#34;,&#34;The infinite chain&#34;]},{&#34;id&#34;:7,&#34;title&#34;:&#34;Dynamics: Stone's theorem and the free wave packet&#34;,&#34;sections&#34;:[&#34;Unitary groups and their generators&#34;,&#34;Evolution by an explicit Hamiltonian&#34;,&#34;Stone’s theorem&#34;,&#34;The free packet&#34;]},{&#34;id&#34;:8,&#34;title&#34;:&#34;The harmonic oscillator and coherent states&#34;,&#34;sections&#34;:[&#34;Ladder operators&#34;,&#34;The Hermite functions are complete&#34;,&#34;The oscillator’s levels&#34;,&#34;A quarter period is a Fourier transform&#34;,&#34;Coherent states&#34;,&#34;Phase space inside the state space&#34;]},{&#34;id&#34;:9,&#34;title&#34;:&#34;The canonical pair: Weyl's relation and Stone–von Neumann&#34;,&#34;sections&#34;:[&#34;Translations and Weyl’s relation&#34;,&#34;The theorem, and why [Q,P]=iiħis not enough&#34;,&#34;Von Neumann’s projection&#34;,&#34;Proof of the Stone–von Neumann theorem&#34;,&#34;What the theorem decides&#34;]},{&#34;id&#34;:10,&#34;title&#34;:&#34;The finite well: a spectrum in two parts&#34;,&#34;sections&#34;:[&#34;Adding a bounded potential&#34;,&#34;The eigenvalue equation&#34;,&#34;Bound states are simple&#34;,&#34;The square well&#34;,&#34;The continuum&#34;,&#34;Every attractive well binds&#34;]},{&#34;id&#34;:11,&#34;title&#34;:&#34;Scattering states: transmission, reflection, tunnelling&#34;,&#34;sections&#34;:[&#34;Waves that do not decay&#34;,&#34;The deltapotential&#34;,&#34;The step&#34;,&#34;Packets and wave operators&#34;,&#34;Tunnelling&#34;]},{&#34;id&#34;:12,&#34;title&#34;:&#34;States that stay and states that leave: decay&#34;,&#34;sections&#34;:[&#34;The point part and the continuous part&#34;,&#34;States that leave&#34;,&#34;Short times&#34;,&#34;A state that decays exactly&#34;,&#34;A level in a continuum: the golden rule&#34;]},{&#34;id&#34;:13,&#34;title&#34;:&#34;A particle in space: orbital angular momentum&#34;,&#34;sections&#34;:[&#34;Three dimensions&#34;,&#34;Orbital angular momentum&#34;,&#34;The multiplets on functions&#34;,&#34;Spherical harmonics&#34;,&#34;Central potentials&#34;,&#34;The oscillator in space&#34;]},{&#34;id&#34;:14,&#34;title&#34;:&#34;Hydrogen: the Hamiltonian&#34;,&#34;sections&#34;:[&#34;The Coulomb Hamiltonian&#34;,&#34;Hydrogen is stable&#34;,&#34;The continuum and the discrete spectrum&#34;]},{&#34;id&#34;:15,&#34;title&#34;:&#34;Hydrogen: the spectrum&#34;,&#34;sections&#34;:[&#34;The bound states&#34;,&#34;The degeneracy n²&#34;,&#34;The Balmer lines&#34;,&#34;What a continuous quantum system is&#34;]}],&#34;context&#34;:&#34;I am studying Quantum Mechanics II: continuous systems, after a course in finite-dimensional quantum mechanics. I am working on Lecture {n}, “{title}”, section “{topic}”. The inner product is antilinear in the first slot and ħ is explicit. State every operator domain and boundary condition. Distinguish a state from a vector in an operator domain, and a symmetric operator from a self-adjoint one. Distinguish proved, sketched and cited results. Use the lecture excerpt I provide as the authority; ask for it when needed.&#34;,&#34;modes&#34;:[{&#34;id&#34;:&#34;explain&#34;,&#34;label&#34;:&#34;Explain with an example&#34;,&#34;description&#34;:&#34;Explain the idea briefly, define each symbol, then work one small example from this section. State its hypotheses and domain. Give me a similar exercise and wait for my attempt. Ask me to check normalisation, units and limiting cases.&#34;,&#34;detailLabel&#34;:&#34;Add your question or attempt (optional).&#34;,&#34;detailPlaceholder&#34;:&#34;Question: …\nMy attempt: …&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;{detail}&#34;,&#34;template&#34;:&#34;{context}\n\n{detail}\n\nExplain the idea briefly, define each symbol, then work one small example from this section. State its hypotheses and domain. Give me a similar exercise and wait for my attempt. Ask me to check normalisation, units and limiting cases.&#34;},{&#34;id&#34;:&#34;quiz&#34;,&#34;label&#34;:&#34;Ask me questions&#34;,&#34;description&#34;:&#34;Ask one question at a time and wait. Start with a precise definition, then an example, a counterexample, and a hypothesis a theorem needs. Give a check or a hint when I struggle.&#34;,&#34;detailLabel&#34;:&#34;Add your question or attempt (optional).&#34;,&#34;detailPlaceholder&#34;:&#34;Question: …\nMy attempt: …&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;{detail}&#34;,&#34;template&#34;:&#34;{context}\n\n{detail}\n\nAsk one question at a time and wait. Start with a precise definition, then an example, a counterexample, and a hypothesis a theorem needs. Give a check or a hint when I struggle.&#34;},{&#34;id&#34;:&#34;check&#34;,&#34;label&#34;:&#34;Check my attempt&#34;,&#34;description&#34;:&#34;Ask what is given and what must be shown. Read my attempt one step at a time and ask me to justify each step. Help me find any error myself. Check domain membership, boundary terms, convergence, signs and factors of ħ. Do not invent an excerpt or a citation.&#34;,&#34;detailLabel&#34;:&#34;Add your question or attempt (optional).&#34;,&#34;detailPlaceholder&#34;:&#34;Question: …\nMy attempt: …&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;{detail}&#34;,&#34;template&#34;:&#34;{context}\n\n{detail}\n\nAsk what is given and what must be shown. Read my attempt one step at a time and ask me to justify each step. Help me find any error myself. Check domain membership, boundary terms, convergence, signs and factors of ħ. Do not invent an excerpt or a citation.&#34;}]}" data-text="{&#34;copied&#34;:&#34;Copied ✓&#34;,&#34;selected&#34;:&#34;The prompt is selected. Press Ctrl+C.&#34;}"> <h2 id="ask-heading">Ask about a lecture</h2> <div class="ask-card"> <label class="ask-step"> <span>Lecture</span> <select class="select-field" data-lecture> <option value="0"> 0 · Mathematical preliminaries </option><option value="1"> 1 · The particle in a box </option><option value="2"> 2 · The box in time </option><option value="3"> 3 · Which momentum? Self-adjointness is a choice </option><option value="4"> 4 · The free particle: observables without eigenvalues </option><option value="5"> 5 · Readings on intervals: spectral measures </option><option value="6"> 6 · The spectrum and the resolvent </option><option value="7"> 7 · Dynamics: Stone&#39;s theorem and the free wave packet </option><option value="8"> 8 · The harmonic oscillator and coherent states </option><option value="9"> 9 · The canonical pair: Weyl&#39;s relation and Stone–von Neumann </option><option value="10"> 10 · The finite well: a spectrum in two parts </option><option value="11"> 11 · Scattering states: transmission, reflection, tunnelling </option><option value="12"> 12 · States that stay and states that leave: decay </option><option value="13"> 13 · A particle in space: orbital angular momentum </option><option value="14"> 14 · Hydrogen: the Hamiltonian </option><option value="15" selected> 15 · Hydrogen: the spectrum </option> </select> </label> <fieldset class="ask-step"> <legend>Section</legend> <div class="chip-row" data-topics> <label class="topic-chip"><input type="radio" name="ask-topic" value="The bound states" checked><span>The bound states</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="The degeneracy n²"><span>The degeneracy n²</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="The Balmer lines"><span>The Balmer lines</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="What a continuous quantum system is"><span>What a continuous quantum system is</span></label> </div> </fieldset> <fieldset class="ask-step"> <legend>What do you need?</legend> <div class="mode-grid"> <label class="mode"> <input type="radio" name="ask-mode" value="explain" checked> <span class="mode-label">Explain with an example</span> <span class="mode-description">Explain the idea briefly, define each symbol, then work one small example from this section. State its hypotheses and domain. Give me a similar exercise and wait for my attempt. Ask me to check normalisation, units and limiting cases.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="quiz"> <span class="mode-label">Ask me questions</span> <span class="mode-description">Ask one question at a time and wait. Start with a precise definition, then an example, a counterexample, and a hypothesis a theorem needs. Give a check or a hint when I struggle.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="check"> <span class="mode-label">Check my attempt</span> <span class="mode-description">Ask what is given and what must be shown. Read my attempt one step at a time and ask me to justify each step. Help me find any error myself. Check domain membership, boundary terms, convergence, signs and factors of ħ. Do not invent an excerpt or a citation.</span> </label> </div> </fieldset> <label class="ask-step"> <span data-detail-label>Add your question or attempt (optional).</span> <textarea class="number-field ask-detail" rows="2" data-detail placeholder="Question: …
+My attempt: …"></textarea> </label> <label class="ask-step"> <span>Your prompt — edit freely</span> <textarea class="ask-preview" rows="12" data-preview spellcheck="false"></textarea> </label> <div class="ask-actions"> <a class="btn btn-primary" href="https://www.google.com/search?udm=50" target="_blank" rel="noopener" data-ai-mode>Ask Google AI ↗</a> <button class="btn" type="button" data-copy-preview>Copy prompt</button> </div> <p class="ask-status" data-status role="status" aria-live="polite">Use the copied prompt in your preferred assistant.</p> </div> </section><h2>Where to start</h2> <p class="section-intro">Ask for an assumption check before computing.</p> <div class="chat"> <div class="chat-turn chat-you"> <div class="chat-bubble"> <span class="chat-who">You</span> <p>I want to apply this operator to a state.</p> </div>  </div><div class="chat-turn chat-ai"> <div class="chat-bubble"> <span class="chat-who">AI</span> <p>What is the operator’s domain? Does your vector belong to it?</p> </div>  </div> </div> <h2>Study habits</h2> <ul class="habits"> <li><b>Provide the source.</b> Paste the precise statement and your own attempt.</li><li><b>Do the working.</b> Ask for one hint, then try again.</li> </ul> <h2>Longer sessions</h2> <p class="section-intro">Paste an excerpt and fill in the bracketed fields.</p> <details class="prompt-card" data-prompt> <summary> <span class="prompt-title">1 · Revise a concept</span> <span class="prompt-when">Paste the lecture excerpt and your question.</span> </summary> <div class="prompt-body"><pre data-prompt-text>I am studying Quantum Mechanics II: continuous systems, after a course in finite-dimensional quantum mechanics. I am working on Lecture [N], “[lecture title]”, section “[section]”. The inner product is antilinear in the first slot and ħ is explicit. State every operator domain and boundary condition. Distinguish a state from a vector in an operator domain, and a symmetric operator from a self-adjoint one. Distinguish proved, sketched and cited results. Use the lecture excerpt I provide as the authority; ask for it when needed.
+
+Ask me for a definition, example and counterexample. Ask one question at a time and wait.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">2 · Audit a proof</span> <span class="prompt-when">Paste the lecture excerpt and your question.</span> </summary> <div class="prompt-body"><pre data-prompt-text>I am studying Quantum Mechanics II: continuous systems, after a course in finite-dimensional quantum mechanics. I am working on Lecture [N], “[lecture title]”, section “[section]”. The inner product is antilinear in the first slot and ħ is explicit. State every operator domain and boundary condition. Distinguish a state from a vector in an operator domain, and a symmetric operator from a self-adjoint one. Distinguish proved, sketched and cited results. Use the lecture excerpt I provide as the authority; ask for it when needed.
+
+Ask for the statement and my complete proof. Check hypotheses, domains and convergence at every step. Give me a hint so I can find any error myself.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">3 · Set a problem</span> <span class="prompt-when">Paste the lecture excerpt and your question.</span> </summary> <div class="prompt-body"><pre data-prompt-text>I am studying Quantum Mechanics II: continuous systems, after a course in finite-dimensional quantum mechanics. I am working on Lecture [N], “[lecture title]”, section “[section]”. The inner product is antilinear in the first slot and ħ is explicit. State every operator domain and boundary condition. Distinguish a state from a vector in an operator domain, and a symmetric operator from a self-adjoint one. Distinguish proved, sketched and cited results. Use the lecture excerpt I provide as the authority; ask for it when needed.
+
+Help me write one problem on this lecture. Check that its data suffice. Ask me to solve it and verify the answer myself before giving it to a partner.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">4 · Work a problem</span> <span class="prompt-when">Paste the lecture excerpt and your question.</span> </summary> <div class="prompt-body"><pre data-prompt-text>I am studying Quantum Mechanics II: continuous systems, after a course in finite-dimensional quantum mechanics. I am working on Lecture [N], “[lecture title]”, section “[section]”. The inner product is antilinear in the first slot and ħ is explicit. State every operator domain and boundary condition. Distinguish a state from a vector in an operator domain, and a symmetric operator from a self-adjoint one. Distinguish proved, sketched and cited results. Use the lecture excerpt I provide as the authority; ask for it when needed.
+
+Ask for the problem and my attempt. Ask why my chosen method applies. Offer one hint at a time and wait for my working.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><h2>Working in pairs</h2> <ol class="steps"> <li>Each write a problem and verify your own solution.</li><li>Swap the problem statements only.</li><li>Work each other’s problem.</li><li>Compare solutions and discuss errors without AI.</li> </ol> <div class="trap"> <h3>What to check</h3> <p><strong>Check the assumptions.</strong> Check domains, boundary conditions and convergence against the notes.</p><p><strong>Verify the answer.</strong> Check normalisation, units and limiting cases.</p> </div> <script>
+    (function () {
+      /** Copy synchronously inside the click; the async API is the fallback. */
+      function copy(text) {
+        var area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed"; area.style.opacity = "0"; area.style.top = "0";
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+        document.body.removeChild(area);
+        if (!ok && navigator.clipboard) {
+          navigator.clipboard.writeText(text).catch(function () {});
+          ok = true;
+        }
+        return ok;
+      }
+      function say(status, message) {
+        if (!status) return;
+        status.textContent = message;
+        status.classList.add("is-live");
+      }
+
+      // ---- Ask about a lecture -------------------------------------------
+      var ask = document.querySelector("[data-ask]");
+      if (ask) {
+        var data = JSON.parse(ask.dataset.ask);
+        var text = JSON.parse(ask.dataset.text);
+        var lectureSelect = ask.querySelector("[data-lecture]");
+        var topics = ask.querySelector("[data-topics]");
+        var detail = ask.querySelector("[data-detail]");
+        var detailLabel = ask.querySelector("[data-detail-label]");
+        var preview = ask.querySelector("[data-preview]");
+        var status = ask.querySelector("[data-status]");
+
+        var fill = function (template, values) {
+          return template.replace(/\{(\w+)\}/g, function (whole, key) {
+            return key in values ? values[key] : whole;
+          });
+        };
+        var lecture = function () {
+          return data.lectures.find(function (l) { return String(l.id) === lectureSelect.value; });
+        };
+        var mode = function () {
+          var picked = ask.querySelector("input[name=ask-mode]:checked");
+          return data.modes.find(function (m) { return m.id === (picked && picked.value); }) || data.modes[0];
+        };
+        var topic = function () {
+          var picked = ask.querySelector("input[name=ask-topic]:checked");
+          return picked ? picked.value : "";
+        };
+
+        var renderTopics = function () {
+          topics.textContent = "";
+          lecture().sections.forEach(function (title, index) {
+            var label = document.createElement("label");
+            label.className = "topic-chip";
+            var input = document.createElement("input");
+            input.type = "radio"; input.name = "ask-topic"; input.value = title; input.checked = index === 0;
+            var span = document.createElement("span");
+            span.textContent = title;
+            label.appendChild(input); label.appendChild(span);
+            topics.appendChild(label);
+          });
+        };
+        var render = function () {
+          var l = lecture(), m = mode(), typed = detail.value.trim();
+          detailLabel.textContent = m.detailLabel;
+          detail.placeholder = m.detailPlaceholder;
+          var context = fill(data.context, { n: l.id, title: l.title, topic: topic() });
+          var detailText = typed ? fill(m.detailFilled, { detail: typed }) : m.detailEmpty;
+          preview.value = fill(m.template, { context: context, detail: detailText })
+            .replace(/\n{3,}/g, "\n\n");
+          syncAiMode();
+        };
+        var aiMode = ask.querySelector("[data-ai-mode]");
+        var syncAiMode = function () {
+          aiMode.href = "https://www.google.com/search?udm=50&q=" + encodeURIComponent(preview.value);
+        };
+        // The preview is editable, and an edited prompt is the one to send.
+        preview.addEventListener("input", syncAiMode);
+
+        // A lecture page links here as ai/?lecture=N, so arrive on that lecture.
+        var wanted = new URLSearchParams(location.search).get("lecture");
+        if (wanted && data.lectures.some(function (l) { return String(l.id) === wanted; })) {
+          lectureSelect.value = wanted;
+          renderTopics();
+        }
+        lectureSelect.addEventListener("change", function () { renderTopics(); render(); });
+        // The preview is excluded: its change event fires on blur, and
+        // re-rendering then would throw away what the student just edited.
+        ask.addEventListener("change", function (event) {
+          if (event.target !== lectureSelect && event.target !== preview && event.target !== detail) render();
+        });
+        detail.addEventListener("input", render);
+        render();
+
+        ask.querySelector("[data-copy-preview]").addEventListener("click", function () {
+          if (copy(preview.value)) { say(status, text.copied); }
+          else { preview.select(); say(status, text.selected); }
+        });
+      }
+
+      // ---- The long prompts ----------------------------------------------
+      var strings = ask ? JSON.parse(ask.dataset.text) : { copied: "✓", selected: "Ctrl+C" };
+      document.querySelectorAll("[data-prompt]").forEach(function (card) {
+        var source = card.querySelector("[data-prompt-text]");
+        var body = source.textContent || "";
+        var status = card.querySelector("[data-status]");
+        var selectSource = function () {
+          var range = document.createRange();
+          range.selectNodeContents(source);
+          var selection = window.getSelection();
+          if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+        };
+        card.querySelector("[data-copy]").addEventListener("click", function () {
+          if (copy(body)) { say(status, strings.copied); }
+          else { selectSource(); say(status, strings.selected); }
+        });
+      });
+    })();
+  </script>  </main> <footer class="site-footer"> <div class="wrap"> <p> Quantum Mechanics II — Continuous Systems.
+  Lecture self-checks include answers for comparison. </p> </div> </footer> <script>
+      document.querySelector("[data-theme-toggle]")?.addEventListener("click", function () {
+        var root = document.documentElement;
+        var current = root.getAttribute("data-theme");
+        if (!current) {
+          current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        var next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("quantum2-theme", next); } catch (e) {}
+      });
+    </script>  <script type="module" src="/kvm2/_astro/Base.astro_astro_type_script_index_0_lang.CaQP8g50.js"></script> </body> </html>
