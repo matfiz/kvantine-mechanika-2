@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 500" width="1800" height="500" fill="#000" stroke="#000" stroke-linecap="round" stroke-linejoin="round" font-family="Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, 'DejaVu Serif', serif">
+<!-- The page-top blackboard. Used as a CSS mask (black = ink), so its colour comes from the theme. Formulas are from Lectures 1-14, in the course's frozen conventions (notes/notation-bible.md): the inner product is antilinear in the FIRST slot, so <phi,P psi> - <P phi,psi> = -i hbar [conj(phi) psi]_0^L for P = -i hbar d/dx; U_t = e^{-itH/hbar}, rho_t = U_t rho U_t^dagger; hbar explicit; projections are E (spectral), never P (momentum); the identity is the double-struck one. The drawing is the course's mark: two bound levels in a potential well. -->
+<g stroke="none">
+<text x="40" y="70" font-size="36" font-style="italic" transform="rotate(-2 40 70)">ρ = (𝟙 + <tspan font-weight="bold" font-style="normal">r</tspan> · <tspan font-weight="bold">σ</tspan>)/2</text>
+<text x="52" y="118" font-size="24" font-style="italic" transform="rotate(-1 52 118)">ω(A) = Tr(ρA),     |<tspan font-weight="bold" font-style="normal">r</tspan>| ≤ 1</text>
+<text x="40" y="176" font-size="28" font-style="italic" transform="rotate(1 40 176)">[Q, P] = iħ</text>
+<text x="40" y="240" font-size="28" font-style="italic" transform="rotate(-1 40 240)">U<tspan baseline-shift="sub" font-size="0.7em">t</tspan> = e<tspan baseline-shift="super" font-size="0.62em">−itH/ħ</tspan></text>
+<text x="52" y="296" font-size="24" font-style="italic" transform="rotate(1 52 296)">ρ<tspan baseline-shift="sub" font-size="0.7em">t</tspan> = U<tspan baseline-shift="sub" font-size="0.7em">t</tspan> ρ U<tspan baseline-shift="sub" font-size="0.7em">t</tspan><tspan baseline-shift="super" font-size="0.62em">†</tspan></text>
+<text x="40" y="356" font-size="28" font-style="italic" transform="rotate(-1 40 356)">ω(A<tspan baseline-shift="super" font-size="0.62em">†</tspan>A) ≥ 0,   ω(𝟙) = 1</text>
+<text x="52" y="410" font-size="22" font-style="italic" transform="rotate(1 52 410)">ℋ = ℋ<tspan baseline-shift="sub" font-size="0.7em">A</tspan> ⊗ ℋ<tspan baseline-shift="sub" font-size="0.7em">B</tspan>,     ρ<tspan baseline-shift="sub" font-size="0.7em">A</tspan> = Tr<tspan baseline-shift="sub" font-size="0.7em">B</tspan> ρ</text>
+<text x="968" y="448" font-size="22" font-style="italic" text-anchor="middle">x</text>
+<text x="934" y="128" font-size="22" font-style="italic" text-anchor="middle">V</text>
+<text x="1010" y="250" font-size="30" font-style="italic" transform="rotate(-1 1010 250)">⟨φ, Pψ⟩ − ⟨Pφ, ψ⟩ = −iħ [φ̄ψ]<tspan baseline-shift="sub" font-size="0.62em">0</tspan><tspan baseline-shift="super" font-size="0.62em">L</tspan></text>
+<text x="1020" y="304" font-size="22" font-style="italic" transform="rotate(1 1020 304)">P = −iħ d/dx</text>
+<text x="1000" y="430" font-size="26" font-style="italic" transform="rotate(-1 1000 430)">Σ<tspan baseline-shift="sub" font-size="0.7em">k</tspan> K<tspan baseline-shift="sub" font-size="0.7em">k</tspan><tspan baseline-shift="super" font-size="0.62em">†</tspan>K<tspan baseline-shift="sub" font-size="0.7em">k</tspan> = 𝟙</text>
+<text x="1300" y="72" font-size="30" font-style="italic" transform="rotate(-1 1300 72)">Prob(a) = Tr(ρ E<tspan baseline-shift="sub" font-size="0.7em">a</tspan>)</text>
+<text x="1312" y="126" font-size="22" font-style="italic" transform="rotate(1 1312 126)">E<tspan baseline-shift="sub" font-size="0.7em">a</tspan>E<tspan baseline-shift="sub" font-size="0.7em">b</tspan> = δ<tspan baseline-shift="sub" font-size="0.7em">ab</tspan>E<tspan baseline-shift="sub" font-size="0.7em">a</tspan>,     Σ<tspan baseline-shift="sub" font-size="0.7em">a</tspan> E<tspan baseline-shift="sub" font-size="0.7em">a</tspan> = 𝟙</text>
+<text x="1300" y="184" font-size="26" font-style="italic" transform="rotate(-1 1300 184)">ρ ⟼ E<tspan baseline-shift="sub" font-size="0.7em">a</tspan> ρ E<tspan baseline-shift="sub" font-size="0.7em">a</tspan> / Tr(ρ E<tspan baseline-shift="sub" font-size="0.7em">a</tspan>)</text>
+<text x="1310" y="370" font-size="22" font-style="italic" transform="rotate(1 1310 370)">ℐ<tspan baseline-shift="sub" font-size="0.7em">j</tspan>(ρ) = Σ<tspan baseline-shift="sub" font-size="0.7em">k</tspan> K<tspan baseline-shift="sub" font-size="0.7em">jk</tspan> ρ K<tspan baseline-shift="sub" font-size="0.7em">jk</tspan><tspan baseline-shift="super" font-size="0.62em">†</tspan></text>
+<text x="1300" y="424" font-size="24" font-style="italic" transform="rotate(-1 1300 424)">Tr<tspan baseline-shift="sub" font-size="0.7em">B</tspan> |Ψ⟩⟨Ψ| = 𝟙/2,   |Ψ⟩ = (|00⟩ + |11⟩)/√2</text>
+</g>
+<g fill="none">
+<!-- two bound levels in a potential well, the course's mark (../mphys GLYPHS["quantum"]) at board scale: the axis, the well, each level dashed from wall to wall, and its wavefunction on it (no node, one node) -->
+<path d="M560 440 L960 440" stroke-width="1.8"/>
+<path d="M600 130 C 640 330, 672 410, 760 410 C 848 410, 880 330, 920 130" stroke-width="2.6"/>
+<path d="M670.8 360 L849.2 360 M632.9 270 L887.1 270" stroke-width="2" stroke-dasharray="8 7"/>
+<path d="M670.8 360 C 715 320, 805 320, 849.2 360" stroke-width="2.2"/>
+<path d="M632.9 270 C 662 236, 722 236, 760 270 C 798 304, 858 304, 887.1 270" stroke-width="2.2"/>
+</g>
+</svg>
